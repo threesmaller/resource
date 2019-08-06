@@ -1,8 +1,7 @@
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle/
 call vundle#rc()
-Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'majutsushi/tagbar'
 call vundle#end()
@@ -45,8 +44,6 @@ if has("cscope") && filereadable("/usr/bin/cscope")
    set csverb
 endif
 
-map <F3> :NERDTreeToggle<CR>
-map <F4> :TagbarToggle<CR>
 map <F5> <C-W>h
 map <F6> <C-W>l
 
